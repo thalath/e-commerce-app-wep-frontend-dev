@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const NAV_LINKS = ["Home", "Shop", "Categories", "About"];
 
-export default function Navbar({ cartCount = 0 }) {
+export default function Navbar({ cartCount = 0, onCartOpen }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -27,7 +27,7 @@ export default function Navbar({ cartCount = 0 }) {
           <button style={styles.iconBtn} aria-label="Search">
             <SearchIcon />
           </button>
-          <button style={styles.iconBtn} aria-label="Cart">
+          <button style={styles.iconBtn} aria-label="Cart" onClick={onCartOpen}>
             <CartIcon />
             {cartCount > 0 && <span style={styles.badge}>{cartCount}</span>}
           </button>
