@@ -1,8 +1,9 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./pages/Navbar";
 import Footer from "./components/Footer";
 import CartDrawer from "./pages/CartDrawer";
 import Home from "./pages/Home";
+import "./css/App.css";
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -18,7 +19,6 @@ export default function App() {
       }
       return [...prev, { ...product, qty: 1 }];
     });
-    // setCartOpen(true); // auto-open drawer on add
   };
 
   const handleUpdateQty = (id, newQty) => {
@@ -39,7 +39,6 @@ export default function App() {
 
   return (
     <>
-      <style>{globalStyles}</style>
       <Navbar
         cartCount={cartCount}
         onCartOpen={() => setCartOpen(true)}

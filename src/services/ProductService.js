@@ -1,4 +1,4 @@
-import { fetchJSON } from "../utils/api";
+import { fetchJSON } from "../utils/BaseUrl";
 
 
 export const ProductService = {

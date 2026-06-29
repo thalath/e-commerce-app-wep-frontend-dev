@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Hero from "../components/Hero";
+import Hero from "./Hero";
 import CategorySection from "../components/CategorySection";
 import ProductSection from "../components/ProductSection";
 import { ProductService } from "../services/ProductService";
@@ -12,14 +12,13 @@ export default function Home({ onAddToCart }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Load categories once
+
   useEffect(() => {
     ProductService.getAllCategories()
       .then(setCategories)
       .catch(() => setError("Failed to load categories."));
   }, []);
 
-  // Load products when category changes
   useEffect(() => {
     setLoading(true);
     setError(null);
