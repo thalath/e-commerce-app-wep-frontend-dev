@@ -1,0 +1,36 @@
+.category-section {
+    padding: 72px 24px;
+    background: #fff;
+}
+
+.category-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-header {
+    margin-bottom: 40px;
+}
+
+.category-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.category-title {
+    font-family: "Georgia", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}

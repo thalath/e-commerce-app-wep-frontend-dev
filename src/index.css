@@ -1,1 +1,176 @@
 @import "tailwindcss";
+@import "./css/App.css";
+@import "./css/Hero.css";
+@import "./css/CartDrawer.css";
+@import "./css/ProductCard.css";
+@import "./css/Footer.css";
+@import "./css/Navbar.css";
+@import "./css/CategorySection.css";
+@import "./css/ProductSection.css";
+@import "./css/NewLetter.css";
+
+
+/* Global style */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+a:hover {
+  color: #111;
+}
+
+button:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Table Responsive */
+@media (max-width: 768px) {
+
+  /* Hero section */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-image-grid {
+    justify-content: center;
+  }
+
+  .hero-grid-img {
+    width: 140px;
+    height: 200px;
+  }
+
+  .product-section {
+    padding: 48px 20px;
+  }
+
+  /* Product Section */
+  .product-section-header {
+    align-items: flex-start;
+  }
+
+  .product-section-title {
+    font-size: 26px;
+  }
+
+  .product-grid,
+  .product-loading-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+
+  /* Email Loop Section */
+  .newsletter {
+    padding: 56px 20px;
+  }
+
+  .newsletter-title {
+    font-size: 30px;
+  }
+
+  /* Footer Responsive */
+  .footer {
+    padding: 48px 20px 24px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-legal {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+
+  .product-grid,
+  .product-loading-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-section-clear-btn {
+    width: 100%;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter-input,
+  .newsletter-btn {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .newsletter-btn {
+    padding: 14px;
+  }
+
+  .newsletter-title {
+    font-size: 26px;
+  }
+
+  .newsletter-sub {
+    font-size: 14px;
+  }
+}
+
+
+/* Desktop Footer Responsive */
+@media (max-width: 992px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}

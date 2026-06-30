@@ -1,0 +1,4 @@
+references for free svg icons
+1. https://lucide.dev
+2. https://www.flaticon.com
+3. https://www.svgrepo.com/

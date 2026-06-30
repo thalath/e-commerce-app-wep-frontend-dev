@@ -1,14 +1,15 @@
-import CategoryCard from "./CategoryCard";
+import CategoryCard from "../pages/CategoryCard";
 
 export default function CategorySection({ categories, onSelectCategory }) {
   return (
-    <section style={styles.section}>
-      <div style={styles.inner}>
-        <div style={styles.header}>
-          <p style={styles.eyebrow}>Browse By</p>
-          <h2 style={styles.title}>Shop Categories</h2>
+    <section className="category-section" id="category">
+      <div className="category-inner">
+        <div className="category-header">
+          <p className="category-eyebrow">Browse By</p>
+          <h2 className="category-title">Shop Categories</h2>
         </div>
-        <div style={styles.grid}>
+
+        <div className="category-grid">
           {categories.map((cat) => (
             <CategoryCard
               key={cat}
@@ -21,37 +22,3 @@ export default function CategorySection({ categories, onSelectCategory }) {
     </section>
   );
 }
-
-const styles = {
-  section: {
-    padding: "72px 24px",
-    background: "#fff",
-  },
-  inner: {
-    maxWidth: 1200,
-    margin: "0 auto",
-  },
-  header: {
-    marginBottom: 40,
-  },
-  eyebrow: {
-    fontSize: 11,
-    fontWeight: 600,
-    letterSpacing: 3,
-    textTransform: "uppercase",
-    color: "#999",
-    marginBottom: 8,
-  },
-  title: {
-    fontFamily: "'Georgia', serif",
-    fontSize: 32,
-    fontWeight: 400,
-    color: "#111",
-    margin: 0,
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-    gap: 16,
-  },
-};

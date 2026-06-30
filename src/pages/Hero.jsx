@@ -1,11 +1,9 @@
-import "../css/Hero.css";
-
-export default function Hero() {
+function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero-container">
         <div className="hero-text">
-          <p className="hero-eyebrow">New Arrivals 2024</p>
+          <p className="hero-eyebrow">New Arrivals 2026</p>
 
           <h1 className="hero-heading">
             Everything you
@@ -19,13 +17,17 @@ export default function Hero() {
           </p>
 
           <div className="hero-ctas">
-            <button className="btn-primary">
-              Shop Now
-            </button>
+            <a href="#shop">
+              <button className="btn-primary">
+                Shop Now
+              </button>
+            </a>
 
-            <button className="btn-secondary">
-              View Categories
-            </button>
+            <a href="#category">
+              <button className="btn-secondary" >
+                View Categories
+              </button>
+            </a>
           </div>
         </div>
 
@@ -61,3 +63,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;

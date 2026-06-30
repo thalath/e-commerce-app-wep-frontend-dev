@@ -1,0 +1,91 @@
+.newsletter {
+    background: #111;
+    padding: 72px 24px;
+}
+
+.newsletter-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+}
+
+.newsletter-title {
+    font-family: "Georgia", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 12px;
+}
+
+.newsletter-sub {
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    width: 100%;
+    max-width: 480px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 14px 20px;
+    font-size: 14px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    color: #fff;
+    outline: none;
+    border-radius: 2px 0 0 2px;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-input::placeholder {
+    color: #777;
+}
+
+.newsletter-input:focus {
+    border-color: #fff;
+}
+
+.newsletter-btn {
+    background: #fff;
+    color: #111;
+    border: none;
+    padding: 14px 28px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background: #e5e5e5;
+}
+
+.newsletter-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.newsletter-success-icon {
+    font-size: 40px;
+    color: #4caf50;
+}
+
+.newsletter-success-text {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}

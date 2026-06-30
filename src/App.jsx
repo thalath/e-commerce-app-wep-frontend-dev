@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Navbar from "./pages/Navbar";
-import Footer from "./components/Footer";
+import Footer from "./pages/Footer";
 import CartDrawer from "./pages/CartDrawer";
 import Home from "./pages/Home";
-import "./css/App.css";
+
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -55,37 +55,3 @@ export default function App() {
     </>
   );
 }
-
-const globalStyles = `
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #fff;
-    color: #111;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  a:hover {
-    color: #111 !important;
-  }
-
-  button:focus-visible {
-    outline: 2px solid #111;
-    outline-offset: 2px;
-  }
-
-  @keyframes shimmer {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
-  }
-
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex !important;
-    }
-  }
-`;

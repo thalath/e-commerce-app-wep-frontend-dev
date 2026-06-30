@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import CategorySection from "../components/CategorySection";
 import ProductSection from "../components/ProductSection";
 import { ProductService } from "../services/ProductService";
-import Newsletter from "../components/Newsletter";
+import Newsletter from "./Newsletter";
 
 export default function Home({ onAddToCart }) {
   const [products, setProducts] = useState([]);

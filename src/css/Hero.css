@@ -58,20 +58,23 @@
     background: #111;
     color: #fff;
     border: none;
+    border-radius: 4px;
     padding: 14px 32px;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.25s;
+    transition: all ease-in-out 0.25s;
 }
 
 .btn-primary:hover {
     background: #333;
+    transform: translateY(-4px) scale(1.01);
 }
 
 .btn-secondary {
+    border-radius: 4px;
     background: transparent;
     color: #111;
     border: 1px solid #111;
@@ -81,12 +84,13 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.25s;
+    transition: all ease-in-out 0.25s;
 }
 
 .btn-secondary:hover {
-    background: #111;
     color: #fff;
+    background-color: #111;
+    transform: translateY(-4px) scale(1.05);
 }
 
 .hero-visual {
@@ -115,36 +119,4 @@
     height: 100%;
     object-fit: contain;
     padding: 16px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .hero-inner {
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .hero-sub {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-ctas {
-        justify-content: center;
-    }
-
-    .hero-image-grid {
-        justify-content: center;
-    }
-
-    .hero-grid-img {
-        width: 140px;
-        height: 200px;
-    }
 }

@@ -1,0 +1,80 @@
+.product-section {
+    padding: 72px 24px;
+    background: #fafafa;
+}
+
+.product-section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.product-section-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.product-section-title {
+    font-family: "Georgia", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #111;
+    margin: 0;
+}
+
+.product-section-clear-btn {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #555;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.product-section-clear-btn:hover {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+.product-grid,
+.product-loading-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.product-skeleton {
+    height: 360px;
+    background: linear-gradient(90deg,
+            #f0f0f0 25%,
+            #e8e8e8 50%,
+            #f0f0f0 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

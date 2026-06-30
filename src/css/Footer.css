@@ -1,0 +1,116 @@
+.footer {
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+    padding: 64px 24px 32px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 48px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo {
+    font-family: "Georgia", serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #111;
+}
+
+.footer-tagline {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #888;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-social:hover {
+    color: #111;
+}
+
+.footer-col-title {
+    margin-bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    font-size: 13px;
+    color: #777;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #111;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-copy {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-legal-link {
+    font-size: 12px;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+    color: #111;
+}
